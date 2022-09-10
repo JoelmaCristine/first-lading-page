@@ -1,0 +1,104 @@
+/*No momento da estilização da pagina siga a mesma sequência do html*/
+body{
+    background-color: rgb(34,34,34);
+    color:white; /* definir cor da fonte da página*/
+    font-family:poppinsbold;
+    max-width: 1200px; /* impedir que os elementos da página se espalhem muito caso o site seja aberto em um monitor muito grande*/
+    margin:0 auto;
+    padding: 15px;
+}
+
+ header{
+    display:flex; /* Permite alterar a posição do elemento na tela*/
+    flex-direction: row;
+    justify-content: space-between;  /* Distribui o espaço disponível entre os elementos*/
+    align-items: center; /* Alinha os elementos*/
+ }
+
+ #title{ /* Selecionando elemento html pelo id*/
+flex-direction: column; /*Gantantir que o elemento sempre ficara em coluna*/
+line-height: 10px;
+ }
+
+ li{
+    display: inline-block; /*lista em linha ao em vez de coluna*/
+    margin:20px; /* Abre espaços em volta do elemento*/
+ }
+
+ a{
+    color:white;     
+ }
+
+ a:hover{ /* Animação de qualquer propriedade do seu elemento ex: trocar a cor, aumentar o tamanho da font*/
+    color:blueviolet;
+    transition: 0.3s all; /*serve para determinar o tempo da animação/ todos os elementos*/
+ }
+
+ #btn{
+    border: 2px solid blueviolet;
+    padding:10px;
+    border-radius: 15px;
+ }
+
+ #btn:hover{
+    color:white;
+    background-color: blueviolet;
+ }
+
+ h1{ /* Só tem um h1 então não usou id*/
+ font-weight: 200; 
+ }
+
+ main{
+display:flex;
+flex-direction:row;
+margin-top: 50px;
+ }
+
+ h2{
+    font-size: 56px;
+    line-height: 10px;
+    font-family: poppinsmedium;
+ }
+
+ span{
+   color:blueviolet; 
+ }
+
+ p{
+    text-align:justify;
+    font-family: poppinslight;
+    line-height: 28px;
+    font-size: 25px;
+ }
+
+ img{
+    width: 580px;
+ }
+
+ form{
+    display:flex;
+    flex-direction: column;
+    width: 70%;
+ }
+
+ input{
+    margin: 8px;
+    border-radius: 20px;
+    border:none;
+    padding:15px;
+    font-size: 15px;
+ }
+
+ #btnSubmit{
+    width: 50%;
+    height: 50px;
+    background-color: blueviolet;
+    color: white;
+    font-weight:bold;
+   
+ }
+ #btnSubmit:hover{
+ cursor:pointer;
+   
+ }
